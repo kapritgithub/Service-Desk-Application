@@ -1,0 +1,23 @@
+{
+  "name": "service-desk",
+  "version": "1.0.0",
+  "description": "A Service Desk application",
+  "main": "index.js",
+  "scripts": {
+    "start": "vite --host --port 3000" ,
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "@mui/icons-material": "^5.16.0",
+    "@mui/material": "^5.16.0",
+    "firebase": "^10.12.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.24.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "vite": "^5.3.3"
+  }
+}

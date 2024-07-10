@@ -1,0 +1,27 @@
+.parentCard{
+    display: flex;
+    margin-top: 50px !important;
+    padding: 1rem;
+    color: #fff !important;
+    flex-direction: column;
+    background-color: rgb(17, 41, 73) !important;
+    border: blue solid 2px;
+}
+
+.header{
+    text-align: center;
+}
+
+.cardContent{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    height: 470px;
+    background-color: rgb(17, 41, 73) !important;
+    border: greenyellow solid 3px;
+}
+
+.actualCard{
+    min-width: 270px;
+    text-align: center;
+}

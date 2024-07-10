@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Desk Application</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Registration Form -->
+        <div id="register">
+            <h2>Register</h2>
+            <input type="email" id="register-email" placeholder="Email">
+            <input type="password" id="register-password" placeholder="Password">
+            <button onclick="register()">Register</button>
+        </div>
+        
+        <!-- Login Form -->
+        <div id="login">
+            <h2>Login</h2>
+            <input type="email" id="login-email" placeholder="Email">
+            <input type="password" id="login-password" placeholder="Password">
+            <button onclick="login()">Login</button>
+        </div>
+        
+        <!-- Ticket Creation Form -->
+        <div id="ticket-creation">
+            <h2>Raise a Ticket</h2>
+            <input type="text" id="ticket-description" placeholder="Issue Description">
+            <select id="ticket-priority">
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+            <select id="ticket-category">
+                <option value="technical">Technical</option>
+                <option value="billing">Billing</option>
+                <option value="general">General</option>
+            </select>
+            <button onclick="createTicket()">Submit</button>
+        </div>
+        
+        <!-- Ticket List -->
+        <div id="ticket-list">
+            <h2>Your Tickets</h2>
+            <ul id="tickets"></ul>
+        </div>
+        
+        <!-- Payment Section -->
+        <div id="payment">
+            <h2>Make a Payment</h2>
+            <button onclick="makePayment()">Pay Now</button>
+        </div>
+    </div>
+    
+    <!-- Firebase and Razorpay SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore.js"></script>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <!-- Application Scripts -->
+    <script src="assets/js/razorpay.js"></script>
+    <script src="../src/firebase.js"></script>
+    <script src="../src/auth.js"></script>
+    <script src="../src/tickets.js"></script>
+    <script src="../src/payment.js"></script>
+</body>
+</html>
